@@ -37,21 +37,81 @@ button {
 /* ==== CUSTOM PROPERTIES ==== */
 
 :root {
+    /* color */
     --color-white: hsl(0, 0%, 95%);
-    --color-lightWhite: hsl(0, 0%, 90%);
-    --color-darkWhite: hsl(0, 0%, 70%);
+    --color-white-light: hsl(0, 0%, 90%);
+    --color-white-dark: hsl(0, 0%, 70%);
 
     --color-black: hsl(0, 0%, 5%);
-    --color-lightBlack: hsl(0, 0%, 10%);
-    --color-vlightBlack: hsl(0, 0%, 30%);
+    --color-black-light: hsl(0, 0%, 10%);
+    --color-black-vlight: hsl(0, 0%, 30%);
 
+    --color-blue: rgb(86, 86, 164);
     --color-green: #203302;
     --color-yellow: #FFE900;
     --color-brown: #3B2A1D;
-    --color-lightBrown: #5B3A29;
-    --color-vlightBrown: #F4DAB3;
+    --color-brown-light: #5B3A29;
+    --color-brown-vlight: #F4DAB3;
+
+    /* font size */
+    --size-header: 5rem;
+    --size-vlarge: 1.75rem;
+    --size-large: 1.25rem;
+    --size-medium: 1rem;
+    --size-small: 0.9rem;
+    --size-vsmall: 0.75rem;
+
+    /* spacing */
+    --spacing-xlarge: 10em;
+    --spacing-vlarge: 2.5em;
+    --spacing-large: 2em;
+    --spacing-medium: 1em;
+    --spacing-small: 0.6em;
+    --spacing-vsmall: 0.3em;
 }
 
+/* ==== GENERAL ==== */
+
 body {
-    background-color: var(--color-brown);
+    color: var(--color-white);
+}
+
+/* ==== HEADER ==== */
+
+#header-container {
+    /* height: 55vh; */
+
+    padding: var(--spacing-xlarge) var(--spacing-large) var(--spacing-large) var(--spacing-large);
+
+    background-color: var(--color-green);
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    margin-bottom: var(--spacing-large);
+
+    font-size: var(--size-header);
+    color: var(--color-yellow);
+}
+
+#opening {
+    display: flex;
+    flex-direction: column;
+
+    width: 23ch;
+
+    gap: var(--spacing-vsmall);
+
+    font-size: var(--size-large);
+}
+.day-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    padding: var(--spacing-vsmall) var(--spacing-small);
+    
+    border: 3px solid var(--color-black);
 }
