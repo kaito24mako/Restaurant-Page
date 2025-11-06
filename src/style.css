@@ -146,6 +146,7 @@ body {
 }
 #tab-buttons button {
     border: none;
+    transition: color 150ms ease; 
 }
 #tab-buttons button:hover { 
     color: var(--color-white);
@@ -153,3 +154,5 @@ body {
 #tab-buttons button:active {
     transform: scale(0.96); 
 }
+
+
