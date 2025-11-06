@@ -6,10 +6,6 @@
     background-color: var(--color-white);
 }
 
-#aboutTab {
-    
-}
-
 #aboutWrapper {
     display: flex;
     flex-direction: column;

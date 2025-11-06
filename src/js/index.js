@@ -1,33 +1,43 @@
 import '../css/style.css';
 import '../css/pageLoad.css';
 import '../css/about.css';
+import '../css/menu.css';
 
 import { createHeader } from './pageLoad.js';
 import { createAboutTab } from './about.js';
+import { createMenuTab } from './menu.js';
 
 createHeader();
 createAboutTab();
+createMenuTab();
 
 /* ==== Tab-switching ==== */
-const aboutBtn = document.querySelector('#aboutBtn');
-const menuBtn = document.querySelector('#menuBtn');
 
-const aboutTab = document.querySelector('#aboutTab');
-const menuTab = document.querySelector('#menuTab');
+window.addEventListener('DOMContentLoaded', () => {
+    const aboutBtn = document.querySelector('#aboutBtn');
+    const menuBtn = document.querySelector('#menuBtn');
 
-function showTab(tab) {
-    // hide everything
-    aboutTab.classList.remove('active-tab');
-    menuTab.classList.remove('active-tab');
+    const aboutTab = document.querySelector('#aboutTab');
+    const menuTab = document.querySelector('#menuTab');
 
-    // show tab 
-    tab.classList.add('active-tab');
-}
+    function showTab(tab) {
+        // hide everything
+        aboutTab.classList.remove('active-tab');
+        menuTab.classList.remove('active-tab');
+        // show tab 
+        tab.classList.add('active-tab');
+    }
 
-aboutBtn.addEventListener('click', () => {
-    showTab(aboutTab);
+    aboutBtn.addEventListener('click', () => {
+        showTab(aboutTab);
+    })
+
+    menuBtn.addEventListener('click', () => {
+        showTab(menuTab);
+    })
 })
 
-menuBtn.addEventListener('click', () => {
-    showTab(menuTab);
-})
+
+
+
+

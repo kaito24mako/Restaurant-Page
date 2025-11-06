@@ -92,3 +92,14 @@ body {
     font-size: var(--size-medium);
     color: var(--color-white);
 }
+
+/* ==== TABS ==== */
+.tab {
+    display: none !important;
+}
+
+.tab.active-tab {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+}
