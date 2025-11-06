@@ -1,0 +1,48 @@
+.tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--color-white);
+}
+
+#aboutTab {
+    
+}
+
+#aboutWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    width: clamp(50%, 50vw, 80%);
+  
+    gap: var(--spacing-medium);
+    padding: var(--spacing-vlarge) 0;
+}
+
+#aboutWrapper > #heading {
+    font-size: var(--size-vlarge);
+    font-weight: bold;
+
+    color: var(--color-brown);
+}
+
+#aboutWrapper > #description {
+    margin-bottom: var(--spacing-small);
+
+    color: var(--color-brown-light);
+}
+
+#aboutWrapper > #achievements {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: var(--spacing-medium);
+
+    font-size: var(--size-small);
+
+    color: var(--color-brown-light);
+}

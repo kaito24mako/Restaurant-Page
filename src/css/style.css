@@ -50,7 +50,7 @@ button {
     --color-green: #203302;
     --color-yellow: #FFE900;
     --color-brown: #3B2A1D;
-    --color-brown-light: #5B3A29;
+    --color-brown-light: #5b3a29db;
     --color-brown-vlight: #bca685;
 
     /* font sizes */
@@ -89,70 +89,3 @@ body {
     font-size: var(--size-medium);
     color: var(--color-white);
 }
-
-/* ==== HEADER ==== */
-
-#header-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    padding: var(--spacing-xlarge) var(--spacing-large) var(--spacing-small) var(--spacing-large);
-
-    background-color: var(--color-green);
-}
-
-#title {
-    margin-bottom: var(--spacing-vlarge);
-
-    font-size: var(--size-header);
-    color: var(--color-yellow);
-}
-
-#opening {
-    display: flex;
-    flex-direction: column;
-
-    width: clamp(15rem, 25vw, 20rem);
-    
-    gap: var(--spacing-vsmall);
-
-    font-size: var(--size-medium);
-}
-.day-wrapper {
-    display: flex;
-    justify-content: space-between;
-
-    padding: var(--spacing-vsmall) var(--spacing-small);
-    
-    border: 4px double var(--color-black);
-}
-
-#tab-buttons {
-    display: flex;
-    
-    width: fit-content;
-
-    gap: var(--spacing-medium);
-    margin-top: var(--spacing-vlarge);
-    padding: var(--spacing-vsmall) var(--spacing-small);
-
-    font-weight: bold;
-    background-color: var(--color-brown-vlight);
-    color: var(--color-brown-light);
-
-    border: 2px solid inherit;
-    border-radius: 20px;
-}
-#tab-buttons button {
-    border: none;
-    transition: color 150ms ease; 
-}
-#tab-buttons button:hover { 
-    color: var(--color-white);
-}
-#tab-buttons button:active {
-    transform: scale(0.96); 
-}
-
-
