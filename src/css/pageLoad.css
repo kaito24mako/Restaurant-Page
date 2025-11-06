@@ -14,7 +14,8 @@
 #title {
     margin-bottom: var(--spacing-vlarge);
 
-    font-size: var(--size-header);
+    font-family: var(--font-heading);
+    font-size: var(--size-heading);
     color: var(--color-yellow);
 }
 
@@ -42,11 +43,13 @@
     
     width: fit-content;
 
-    gap: var(--spacing-medium);
+    gap: calc(var(--spacing-medium) + 0.5rem);
     margin-top: var(--spacing-vlarge);
-    padding: var(--spacing-vsmall) var(--spacing-small);
+    padding: var(--spacing-vsmall) var(--spacing-medium);
 
+    font-family: var(--font-heading);
     font-weight: bold;
+
     background-color: var(--color-brown-vlight);
     color: var(--color-brown);
 

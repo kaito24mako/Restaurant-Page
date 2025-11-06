@@ -23,6 +23,7 @@
 }
 
 #aboutWrapper > #heading {
+    font-family: var(--font-heading);
     font-size: var(--size-vlarge);
     font-weight: bold;
 

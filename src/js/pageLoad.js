@@ -16,7 +16,7 @@ export function createHeader() {
     const friday = document.createElement('p');
     friday.textContent = 'Friday';
     const fridayTime = document.createElement('p');
-    fridayTime.textContent = '09.00 - 22.00';
+    fridayTime.textContent = '⏲︎ 09.00 - 22.00';
 
     fridayWrapper.append(friday, fridayTime);
 
@@ -27,7 +27,7 @@ export function createHeader() {
     const saturday = document.createElement('p');
     saturday.textContent = 'Saturday';
     const saturdayTime = document.createElement('p');
-    saturdayTime.textContent = '10.00 - 22.00';
+    saturdayTime.textContent = '⏲︎ 10.00 - 22.00';
 
     saturdayWrapper.append(saturday, saturdayTime);
 

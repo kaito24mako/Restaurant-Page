@@ -9,7 +9,7 @@ export function createAboutTab() {
     const aboutWrapper = document.createElement('div');
     aboutWrapper.id = 'aboutWrapper';
 
-    const heading = document.createElement('p');
+    const heading = document.createElement('h2');
     heading.id = 'heading';
     heading.textContent = 'About Kanazawa Delights';
 

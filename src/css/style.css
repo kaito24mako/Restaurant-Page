@@ -37,6 +37,9 @@ button {
 /* ==== CUSTOM PROPERTIES ==== */
 
 :root {
+    /* fonts */
+    --font-heading: "EB Garamond", system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+
     /* colors */
     --color-white: hsl(0, 0%, 95%);
     --color-white-light: hsl(0, 0%, 90%);
@@ -54,7 +57,7 @@ button {
     --color-brown-vlight: #bca685;
 
     /* font sizes */
-    --size-header: clamp(2.5rem, 4vw + 1rem, 4rem);
+    --size-heading: clamp(2.5rem, 4vw + 1rem, 4rem);
     --size-xlarge: clamp(2rem, 3vw + 1rem, 3rem);
     --size-vlarge: clamp(1.5rem, 2vw + 1rem, 2rem);
     --size-large: clamp(1.25rem, 1.2vw + 0.75rem, 1.5rem);
