@@ -6,10 +6,16 @@ import '../css/menu.css';
 import { createHeader } from './pageLoad.js';
 import { createAboutTab } from './about.js';
 import { createMenuTab } from './menu.js';
+import { displayMenuItems } from './menu.js';
 
 createHeader();
 createAboutTab();
-createMenuTab();
+displayMenuItems();
+
+const menuArray = displayMenuItems();
+createMenuTab(menuArray);
+
+
 
 /* ==== Tab-switching ==== */
 
@@ -35,6 +41,8 @@ window.addEventListener('DOMContentLoaded', () => {
     menuBtn.addEventListener('click', () => {
         showTab(menuTab);
     })
+
+    showTab(aboutTab);
 })
 
 
