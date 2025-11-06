@@ -15,8 +15,6 @@ displayMenuItems();
 const menuArray = displayMenuItems();
 createMenuTab(menuArray);
 
-
-
 /* ==== Tab-switching ==== */
 
 window.addEventListener('DOMContentLoaded', () => {

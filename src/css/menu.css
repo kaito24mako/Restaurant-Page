@@ -25,9 +25,9 @@
     
     padding: var(--spacing-small);
 
-    border: 2px solid #d8bf9b;
+    border: 2px solid var(--color-grey);
     border-radius: 10px;
-    background-color: #d8bf9b;
+    background-color: var(--color-grey-light);
 }
 
 #menuWrapper > #heading {
@@ -35,7 +35,7 @@
     font-size: var(--size-vlarge);
     font-weight: bold;
 
-    color: var(--color-brown);
+    color: var(--color-black);
 }
 
 #menuWrapper .descriptionWrapper {
@@ -43,7 +43,7 @@
     flex-direction: column;
     align-items: flex-start;
 
-    color: var(--color-brown-light);
+    color: var(--color-blue);
 }
 #menuWrapper .descriptionWrapper > :nth-child(1) {
     font-size: var(--size-medium);
@@ -54,6 +54,5 @@
 }
 #menuWrapper #price {
     font-weight: bold;
-    
-    color: var(--color-brown-light);
+    color: var(--color-blue);
 }

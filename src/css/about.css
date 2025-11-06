@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
 
-    background-color: var(--color-white);
+    background-color: var(--color-grey);
 }
 
 #aboutWrapper {
@@ -23,13 +23,13 @@
     font-size: var(--size-vlarge);
     font-weight: bold;
 
-    color: var(--color-brown);
+    color: var(--color-black);
 }
 
 #aboutWrapper > #description {
     margin-bottom: var(--spacing-small);
 
-    color: var(--color-brown-light);
+    color: var(--color-blue);
 }
 
 #aboutWrapper > #achievements {
@@ -41,5 +41,5 @@
 
     font-size: var(--size-small);
 
-    color: var(--color-brown-light);
+    color: var(--color-blue);
 }

@@ -49,12 +49,13 @@ button {
     --color-black-light: hsl(0, 0%, 30%);
     --color-black-dark: hsl(0, 0%, 5%);
 
-    --color-blue: rgb(86, 86, 164);
     --color-green: #203302;
-    --color-yellow: #FFE900;
+    --color-blue: #0f3a4e;
     --color-brown: #3B2A1D;
-    --color-brown-light: #5b3a29db;
-    --color-brown-vlight: #bca685;
+    --color-brown-light: #5b3a29;
+    
+    --color-grey: hsl(0, 0%, 85%);
+    --color-grey-light: hsl(0, 0%, 90%);
 
     /* font sizes */
     --size-heading: clamp(2.5rem, 4vw + 1rem, 4rem);
