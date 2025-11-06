@@ -1,5 +1,4 @@
 export function createAboutTab() {
-    // const aboutBtn = document.querySelector('#aboutBtn');
     const tabContainer = document.querySelector('#content-container');
 
     const aboutTab = document.createElement('div');
