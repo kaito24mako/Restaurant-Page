@@ -1,6 +1,6 @@
 export function createHeader() {
     const headerContainer = document.querySelector('#header-container');
-    const nav = document.querySelector('#tabs-container');
+    const nav = document.querySelector('#tab-buttons');
 
     const title = document.createElement('h1');
     title.id = 'title';

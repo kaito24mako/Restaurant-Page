@@ -42,19 +42,19 @@ button {
     --color-white-light: hsl(0, 0%, 90%);
     --color-white-dark: hsl(0, 0%, 70%);
 
-    --color-black: hsl(0, 0%, 5%);
-    --color-black-light: hsl(0, 0%, 10%);
-    --color-black-vlight: hsl(0, 0%, 30%);
+    --color-black: hsl(0, 0%, 10%);
+    --color-black-light: hsl(0, 0%, 30%);
+    --color-black-dark: hsl(0, 0%, 5%);
 
     --color-blue: rgb(86, 86, 164);
     --color-green: #203302;
     --color-yellow: #FFE900;
     --color-brown: #3B2A1D;
     --color-brown-light: #5B3A29;
-    --color-brown-vlight: #F4DAB3;
+    --color-brown-vlight: #bca685;
 
     /* font sizes */
-    --size-header: clamp(2.5rem, 3.5vw + 1rem, 3.5rem);
+    --size-header: clamp(2.5rem, 4vw + 1rem, 4rem);
     --size-xlarge: clamp(2rem, 3vw + 1rem, 3rem);
     --size-vlarge: clamp(1.5rem, 2vw + 1rem, 2rem);
     --size-large: clamp(1.25rem, 1.2vw + 0.75rem, 1.5rem);
@@ -64,7 +64,7 @@ button {
 
     /* spacing */
     --spacing-xlarge: 10rem;
-    --spacing-vlarge: 2.5rem;
+    --spacing-vlarge: 3rem;
     --spacing-large: 2rem;
     --spacing-medium: 1rem;
     --spacing-small: 0.6rem;
@@ -86,22 +86,23 @@ button {
 /* ==== GENERAL ==== */
 
 body {
+    font-size: var(--size-medium);
     color: var(--color-white);
 }
 
 /* ==== HEADER ==== */
 
 #header-container {
-    padding: var(--spacing-xlarge) var(--spacing-large) var(--spacing-large) var(--spacing-large);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: var(--spacing-xlarge) var(--spacing-large) var(--spacing-small) var(--spacing-large);
 
     background-color: var(--color-green);
 }
 
 #title {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-
     margin-bottom: var(--spacing-vlarge);
 
     font-size: var(--size-header);
@@ -113,7 +114,7 @@ body {
     flex-direction: column;
 
     width: clamp(15rem, 25vw, 20rem);
-
+    
     gap: var(--spacing-vsmall);
 
     font-size: var(--size-medium);
@@ -125,7 +126,30 @@ body {
     padding: var(--spacing-vsmall) var(--spacing-small);
     
     border: 4px double var(--color-black);
-    /* box-shadow: var(--shadow-md); */
 }
 
-/* style buttons next! */
+#tab-buttons {
+    display: flex;
+    
+    width: fit-content;
+
+    gap: var(--spacing-medium);
+    margin-top: var(--spacing-vlarge);
+    padding: var(--spacing-vsmall) var(--spacing-small);
+
+    font-weight: bold;
+    background-color: var(--color-brown-vlight);
+    color: var(--color-brown-light);
+
+    border: 2px solid inherit;
+    border-radius: 20px;
+}
+#tab-buttons button {
+    border: none;
+}
+#tab-buttons button:hover { 
+    color: var(--color-white);
+}
+#tab-buttons button:active {
+    transform: scale(0.96); 
+}
