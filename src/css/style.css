@@ -88,7 +88,9 @@ button {
 
 body {
     font-size: var(--size-medium);
+
     color: var(--color-white);
+    background-color: var(--color-grey);
 }
 
 .tab {
