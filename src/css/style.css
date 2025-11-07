@@ -70,13 +70,13 @@ button {
     --spacing-xlarge: 10rem;
     --spacing-vlarge: 3rem;
     --spacing-large: 2rem;
+    --spacing-vmedium: 1.5rem;
     --spacing-medium: 1rem;
     --spacing-small: 0.6rem;
     --spacing-vsmall: 0.3rem;
 
     /* container widths */
-    --width-large:  clamp(50%, 60vw, 85%);
-    --width-medium:  clamp(50%, 50vw, 80%);
+    --width-tab: clamp(50%, 45vw, 60%);
 
     /* shadows */
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -91,7 +91,18 @@ body {
     color: var(--color-white);
 }
 
-/* ==== TABS ==== */
+.tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--color-grey);
+
+    padding-bottom: var(--spacing-vlarge);
+}
+
+
+/* ==== TAB SWITCHING ==== */
 .tab {
     display: none !important;
 }
@@ -101,3 +112,6 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+
+

@@ -60,9 +60,11 @@ export function displayMenuItems() {
 
     addMenuItem('Mako Ramen', 'Original creamy pork and dashi broth with noodles', '$23');
     addMenuItem('Miri Marvel', "A mixture of our beautiful dog's leftovers", '$12');
-    addMenuItem('Kanazawa Takoyaki', 'Sizzing octopus balls filled with vegetables', '$13');
     addMenuItem('God Fire Ramen', 'Spicy ramen coated in chilli oil and black fungus', '$21');
-
+    addMenuItem('Piping Yakisoba', 'Homemade fried noodles with teriyaki sauce and vegetables', '$19');
+    addMenuItem('Cha-shu Fried Rice', 'Deep fried rice with cha-shu pork', '$18');
+    addMenuItem('Kushiage', 'Deep fried crab, prawn, and vegetable sticks', '$16');
+    addMenuItem('Kanazawa Takoyaki', 'Sizzing octopus balls filled with vegetables', '$13');
     return menuArray;
 }
     
